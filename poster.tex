@@ -600,7 +600,6 @@ We tried some models of deep learning architecture mentioned above to training t
 
 \subsection{Recurrent Neural Network}
 Recurrent Neural Networks (RNNs) are popular models that have shown great promise in many Natural Language Processing, Artificial Speech Recognition, Time Series, Sequence-to-sequence tasks. The idea behind RNNs is to make use of sequential information. Here is what a typical RNN look like:
-
 \begin{figure}[h]
 \includegraphics[scale=0.5]{rnn.png}
 \centering
@@ -631,18 +630,16 @@ In theory RNNs can make use of information in arbitrarily long sequences, but in
 
 where $\sigma$ is the logistic sigmoid function, and $i$, $f$, $o$ and $c$ are respectively the \textit{input gate}, \textit{forget gate}, \textit{output gate} and \textit{cell memory} vectors.
 
-
-
-
-
-
-
-
-
 \subsection{Bidirectional Recurrent Neural Networks}
 Bidirectional Recurrent Neural Networks (BRNNs) are based on the idea that the output at time t may not only depend on the previous elements in the sequence, but also future elements. Bidirectional RNNs are quite simple. They are just two RNNs stacked on top of each other. The output is then computed based on the hidden state of both RNNs.
 
+\begin{figure}[h]
+\includegraphics[scale=0.4]{brnn.png}
+\centering
+\caption{\textit{Bidirectional Recurrent Neural Network}}
+\end{figure}
 
+%As illustrated in Figure 5, a BRNN computes the forward hidden sequence h, the backward hidden sequence hand the output sequence y by iterating the backward layer from t = T to 1, the forward layer from t = 1 to T and then updating the output layer
 
 
 \subsection{Deep Bidirectional Recurrent Neural Networks}

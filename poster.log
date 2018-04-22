@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.8)  22 APR 2018 12:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.8)  22 APR 2018 13:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1075,33 +1075,41 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <rnn.png, id=89, 546.54187pt x 219.06844pt>
 File: rnn.png Graphic file (type png)
  <use rnn.png>
-Package pdftex.def Info: rnn.png used on input line 605.
+Package pdftex.def Info: rnn.png used on input line 604.
 (pdftex.def)             Requested size: 273.27026pt x 109.53394pt.
 
-Overfull \hbox (20.2204pt too wide) in paragraph at lines 605--607
+Overfull \hbox (20.2204pt too wide) in paragraph at lines 604--606
  [][] 
  []
 
 <lstm.png, id=91, 572.1375pt x 374.39874pt>
 File: lstm.png Graphic file (type png)
  <use lstm.png>
-Package pdftex.def Info: lstm.png used on input line 619.
+Package pdftex.def Info: lstm.png used on input line 618.
 (pdftex.def)             Requested size: 286.06804pt x 187.19891pt.
 
-Overfull \hbox (33.01817pt too wide) in paragraph at lines 619--621
+Overfull \hbox (33.01817pt too wide) in paragraph at lines 618--620
  [][] 
  []
 
 
 Underfull \vbox (badness 2970) has occurred while \output is active []
 
- [2 <./dataset.png> <./rnn.png> <./lstm.png>]
-Underfull \hbox (badness 2486) in paragraph at lines 725--726
+ [2 <./dataset.png> <./rnn.png> <./lstm.png>] <brnn.png, id=106, 547.04375pt x 
+250.9375pt>
+File: brnn.png Graphic file (type png)
+
+<use brnn.png>
+Package pdftex.def Info: brnn.png used on input line 637.
+(pdftex.def)             Requested size: 218.81361pt x 100.37321pt.
+
+Underfull \hbox (badness 2486) in paragraph at lines 722--723
 \T5/ptm/m/n/8 con-vo-lu-tional neu-ral network-based phone recog-ni-tion." Acou
 s-tics,
  []
 
-** WARNING: \IEEEbiography is locked out when in conference mode (line 744).
+[3 <./brnn.png (PNG copy)>]
+** WARNING: \IEEEbiography is locked out when in conference mode (line 741).
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1113,24 +1121,26 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 763.
-[3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 763.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 760.
+[4
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 760.
  (./poster.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 763.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 763.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 760.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 760.
 Package rerunfilecheck Info: File `poster.out' has not changed.
-(rerunfilecheck)             Checksum: E1D99C86068F3FECD2C1353DB5ABDCBB;1153.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 763.
+(rerunfilecheck)             Checksum: 95F8F46882D53F19B4A728441E6CEF4F;1153.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 760.
  ) 
 Here is how much of TeX's memory you used:
- 10335 strings out of 492995
- 150840 string characters out of 6132704
- 263741 words of memory out of 5000000
- 13713 multiletter control sequences out of 15000+600000
+ 10342 strings out of 492995
+ 150921 string characters out of 6132704
+ 262741 words of memory out of 5000000
+ 13717 multiletter control sequences out of 15000+600000
  120416 words of font info for 104 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 41i,9n,39p,1326b,376s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,9n,39p,1326b,501s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/vntex/t5.enc}{/usr/local/
 texlive/2017/texmf-dist/fonts/enc/dvips/tex-gyre/q-t5.enc}</usr/local/texlive/2
 017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/20
@@ -1144,10 +1154,10 @@ nts/type1/vntex/urwvn/utmb8v.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/vntex/urwvn/utmbi8v.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/vntex
 /urwvn/utmr8v.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/vntex/urwvn/u
 tmri8v.pfb>
-Output written on poster.pdf (3 pages, 324352 bytes).
+Output written on poster.pdf (4 pages, 340082 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 150 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
- 165 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 179 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 170 words of extra memory for PDF output out of 10000 (max. 10000000)
 
