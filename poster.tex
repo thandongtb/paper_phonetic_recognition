@@ -75,6 +75,8 @@
 \usepackage{url}
 \usepackage[table,xcdraw]{xcolor}
 \newcommand\abs[1]{\left|#1\right|}
+\usepackage{graphicx}
+\newcommand{\cev}[1]{\reflectbox{\ensuremath{\vec{\reflectbox{\ensuremath{#1}}}}}}
 % Add the compsoc option for Computer Society conferences.
 %
 % If IEEEtran.cls has not been installed into the LaTeX system files,
@@ -606,8 +608,8 @@ Recurrent Neural Networks (RNNs) are popular models that have shown great promis
 \caption{\textit{Recurrent Neural Network}}
 \end{figure}
 \begin{align*}
-	&h_t = Ux_t + Wh_{t-1}\\
-	&o_t = Vh_t
+	&h_t = \sigma(Ux_t + Wh_{t-1} + b_1)\\
+	&o_t = softmax(Vh_t + b_2)
 \end{align*}
 
 
@@ -633,18 +635,25 @@ where $\sigma$ is the logistic sigmoid function, and $i$, $f$, $o$ and $c$ are r
 \subsection{Bidirectional Recurrent Neural Networks}
 Bidirectional Recurrent Neural Networks (BRNNs) are based on the idea that the output at time t may not only depend on the previous elements in the sequence, but also future elements. Bidirectional RNNs are quite simple. They are just two RNNs stacked on top of each other. The output is then computed based on the hidden state of both RNNs.
 
+
+
 \begin{figure}[h]
 \includegraphics[scale=0.4]{brnn.png}
 \centering
 \caption{\textit{Bidirectional Recurrent Neural Network}}
 \end{figure}
 
-%As illustrated in Figure 5, a BRNN computes the forward hidden sequence h, the backward hidden sequence hand the output sequence y by iterating the backward layer from t = T to 1, the forward layer from t = 1 to T and then updating the output layer
+As illustrated in Figure 5, a BRNN computes the forward hidden sequence $\vec{h}$, the backward hidden sequence $\cev{h}$ and the output sequence $y$ by iterating the backward layer from $t = T$ to $1$, the forward layer from $t = 1$ to $T$ and then updating the output layer
 
+\begin{align*}
+	&\vec{h_t} = \sigma (W_{x\vec{h}}x_t + W_{\vec{h}\vec{h}}\vec{h_{t-1}} + b_{\vec{h}})\\
+	&\cev{h_t} = \sigma (W_{x\cev{h}}x_t + W_{\cev{h}\cev{h}}\cev{h_{t-1}} + b_{\cev{h}})\\
+	&y_t = W_{\vec{h}y}\vec{h}_t + W_{\cev{h}y}\cev{h}_t + b_y
+\end{align*}
 
 \subsection{Deep Bidirectional Recurrent Neural Networks}
 Deep (Bidirectional) RNNs are similar to Bidirectional RNNs, only that we now have multiple layers per time step. In practice this gives us a higher learning capacity (but we also need a lot of training data).
-<picture and explaination>
+
 
 \subsection{Other techniques}
 \subsubsection{Sequence length}
