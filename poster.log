@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.8)  16 APR 2018 22:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.8)  22 APR 2018 20:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -353,6 +353,16 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2017/03/11 v5.2b context-sensitive quotations (JAW)
@@ -910,73 +920,73 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 
-Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 360.
+Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 364.
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
 (./poster.aux)
 \openout1 = `poster.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 360.
-LaTeX Font Info:    ... okay on input line 360.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 360.
-LaTeX Font Info:    ... okay on input line 360.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 360.
-LaTeX Font Info:    ... okay on input line 360.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 360.
-LaTeX Font Info:    ... okay on input line 360.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 360.
-LaTeX Font Info:    ... okay on input line 360.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 360.
-LaTeX Font Info:    ... okay on input line 360.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 360.
-LaTeX Font Info:    ... okay on input line 360.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 360.
-LaTeX Font Info:    Try loading font information for T5+cmr on input line 360.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 364.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 364.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 364.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 364.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 364.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 364.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 364.
+LaTeX Font Info:    ... okay on input line 364.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 364.
+LaTeX Font Info:    Try loading font information for T5+cmr on input line 364.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/vntex/t5cmr.fd
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 360.
+LaTeX Font Info:    ... okay on input line 364.
 LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <5> not available
-(Font)              Font shape `T5/ptm/b/n' tried instead on input line 360.
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 364.
 LaTeX Font Info:    Font shape `T5/ptm/bx/it' in size <5> not available
-(Font)              Font shape `T5/ptm/b/it' tried instead on input line 360.
+(Font)              Font shape `T5/ptm/b/it' tried instead on input line 364.
 LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <7> not available
-(Font)              Font shape `T5/ptm/b/n' tried instead on input line 360.
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 364.
 LaTeX Font Info:    Font shape `T5/ptm/bx/it' in size <7> not available
-(Font)              Font shape `T5/ptm/b/it' tried instead on input line 360.
+(Font)              Font shape `T5/ptm/b/it' tried instead on input line 364.
 LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T5/ptm/b/n' tried instead on input line 360.
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 364.
 LaTeX Font Info:    Font shape `T5/ptm/bx/it' in size <8> not available
-(Font)              Font shape `T5/ptm/b/it' tried instead on input line 360.
+(Font)              Font shape `T5/ptm/b/it' tried instead on input line 364.
 LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T5/ptm/b/n' tried instead on input line 360.
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 364.
 LaTeX Font Info:    Font shape `T5/ptm/bx/it' in size <9> not available
-(Font)              Font shape `T5/ptm/b/it' tried instead on input line 360.
+(Font)              Font shape `T5/ptm/b/it' tried instead on input line 364.
 LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T5/ptm/b/n' tried instead on input line 360.
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 364.
 LaTeX Font Info:    Font shape `T5/ptm/bx/it' in size <10> not available
-(Font)              Font shape `T5/ptm/b/it' tried instead on input line 360.
+(Font)              Font shape `T5/ptm/b/it' tried instead on input line 364.
 LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <11> not available
-(Font)              Font shape `T5/ptm/b/n' tried instead on input line 360.
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 364.
 LaTeX Font Info:    Font shape `T5/ptm/bx/it' in size <11> not available
-(Font)              Font shape `T5/ptm/b/it' tried instead on input line 360.
+(Font)              Font shape `T5/ptm/b/it' tried instead on input line 364.
 LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T5/ptm/b/n' tried instead on input line 360.
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 364.
 LaTeX Font Info:    Font shape `T5/ptm/bx/it' in size <12> not available
-(Font)              Font shape `T5/ptm/b/it' tried instead on input line 360.
+(Font)              Font shape `T5/ptm/b/it' tried instead on input line 364.
 LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <17> not available
-(Font)              Font shape `T5/ptm/b/n' tried instead on input line 360.
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 364.
 LaTeX Font Info:    Font shape `T5/ptm/bx/it' in size <17> not available
-(Font)              Font shape `T5/ptm/b/it' tried instead on input line 360.
+(Font)              Font shape `T5/ptm/b/it' tried instead on input line 364.
 LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <20> not available
-(Font)              Font shape `T5/ptm/b/n' tried instead on input line 360.
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 364.
 LaTeX Font Info:    Font shape `T5/ptm/bx/it' in size <20> not available
-(Font)              Font shape `T5/ptm/b/it' tried instead on input line 360.
+(Font)              Font shape `T5/ptm/b/it' tried instead on input line 364.
 LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <24> not available
-(Font)              Font shape `T5/ptm/b/n' tried instead on input line 360.
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 364.
 LaTeX Font Info:    Font shape `T5/ptm/bx/it' in size <24> not available
-(Font)              Font shape `T5/ptm/b/it' tried instead on input line 360.
+(Font)              Font shape `T5/ptm/b/it' tried instead on input line 364.
 
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1009,7 +1019,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring OFF on input line 360.
+Package hyperref Info: Link coloring OFF on input line 364.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1019,9 +1029,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count147
 )
-LaTeX Info: Redefining \ref on input line 360.
-LaTeX Info: Redefining \pageref on input line 360.
-LaTeX Info: Redefining \nameref on input line 360.
+LaTeX Info: Redefining \ref on input line 364.
+LaTeX Info: Redefining \pageref on input line 364.
+LaTeX Info: Redefining \nameref on input line 364.
 
 (./poster.out) (./poster.out)
 \@outlinefile=\write3
@@ -1029,7 +1039,7 @@ LaTeX Info: Redefining \nameref on input line 360.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for T5+qcr on input line 417.
+LaTeX Font Info:    Try loading font information for T5+qcr on input line 421.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tex-gyre/t5qcr.fd
 File: t5qcr.fd 2009/09/25 v1.2 font definition file for T5/qcr
@@ -1037,7 +1047,7 @@ File: t5qcr.fd 2009/09/25 v1.2 font definition file for T5/qcr
 <baseline.jpg, id=76, 413.29407pt x 108.405pt>
 File: baseline.jpg Graphic file (type jpg)
  <use baseline.jpg>
-Package pdftex.def Info: baseline.jpg used on input line 553.
+Package pdftex.def Info: baseline.jpg used on input line 557.
 (pdftex.def)             Requested size: 247.97835pt x 65.04349pt.
  [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -1046,20 +1056,59 @@ Package pdftex.def Info: baseline.jpg used on input line 553.
 <dataset.png, id=88, 644.4075pt x 356.33125pt>
 File: dataset.png Graphic file (type png)
  <use dataset.png>
-Package pdftex.def Info: dataset.png used on input line 568.
+Package pdftex.def Info: dataset.png used on input line 572.
 (pdftex.def)             Requested size: 238.42703pt x 131.84048pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 581.
+               Default added (so using `tbp') on input line 585.
 
-[2 <./dataset.png>]
-Underfull \hbox (badness 2486) in paragraph at lines 684--685
+LaTeX Font Info:    Try loading font information for U+msa on input line 589.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 589.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<rnn.png, id=89, 546.54187pt x 219.06844pt>
+File: rnn.png Graphic file (type png)
+ <use rnn.png>
+Package pdftex.def Info: rnn.png used on input line 606.
+(pdftex.def)             Requested size: 273.27026pt x 109.53394pt.
+
+Overfull \hbox (20.2204pt too wide) in paragraph at lines 606--608
+ [][] 
+ []
+
+<lstm.png, id=91, 572.1375pt x 374.39874pt>
+File: lstm.png Graphic file (type png)
+ <use lstm.png>
+Package pdftex.def Info: lstm.png used on input line 620.
+(pdftex.def)             Requested size: 286.06804pt x 187.19891pt.
+
+Overfull \hbox (33.01817pt too wide) in paragraph at lines 620--622
+ [][] 
+ []
+
+
+Underfull \vbox (badness 2970) has occurred while \output is active []
+
+ [2 <./dataset.png> <./rnn.png> <./lstm.png>] <brnn.png, id=106, 547.04375pt x 
+250.9375pt>
+File: brnn.png Graphic file (type png)
+
+<use brnn.png>
+Package pdftex.def Info: brnn.png used on input line 641.
+(pdftex.def)             Requested size: 218.81361pt x 100.37321pt.
+ [3 <./brnn.png (PNG copy)>]
+Underfull \hbox (badness 2486) in paragraph at lines 731--732
 \T5/ptm/m/n/8 con-vo-lu-tional neu-ral network-based phone recog-ni-tion." Acou
 s-tics,
  []
 
-** WARNING: \IEEEbiography is locked out when in conference mode (line 703).
+** WARNING: \IEEEbiography is locked out when in conference mode (line 750).
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1071,37 +1120,43 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 722.
-[3
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 769.
+[4
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 722.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 769.
  (./poster.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 722.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 722.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 769.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 769.
 Package rerunfilecheck Info: File `poster.out' has not changed.
-(rerunfilecheck)             Checksum: BB3FDF013DB55444B1FFABAE5BA41F0D;1162.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 722.
+(rerunfilecheck)             Checksum: 95F8F46882D53F19B4A728441E6CEF4F;1153.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 769.
  ) 
 Here is how much of TeX's memory you used:
- 10056 strings out of 492995
- 147685 string characters out of 6132704
- 260254 words of memory out of 5000000
- 13449 multiletter control sequences out of 15000+600000
- 123707 words of font info for 107 fonts, out of 8000000 for 9000
+ 10343 strings out of 492995
+ 150924 string characters out of 6132704
+ 264760 words of memory out of 5000000
+ 13718 multiletter control sequences out of 15000+600000
+ 120416 words of font info for 104 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 41i,9n,39p,1326b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,14n,39p,1326b,501s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/vntex/t5.enc}{/usr/local/
 texlive/2017/texmf-dist/fonts/enc/dvips/tex-gyre/q-t5.enc}</usr/local/texlive/2
-017/texmf-dist/fonts/type1/public/tex-gyre/qcrr.pfb></usr/local/texlive/2017/te
-xmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb></usr/local/texlive/2017/texmf-dist
-/fonts/type1/vntex/urwvn/utmbi8v.pfb></usr/local/texlive/2017/texmf-dist/fonts/
-type1/vntex/urwvn/utmr8v.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/vn
-tex/urwvn/utmri8v.pfb>
-Output written on poster.pdf (3 pages, 195892 bytes).
+017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-d
+ist/fonts/type1/public/tex-gyre/qcrr.pfb></usr/local/texlive/2017/texmf-dist/fo
+nts/type1/vntex/urwvn/utmb8v.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
+1/vntex/urwvn/utmbi8v.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/vntex
+/urwvn/utmr8v.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/vntex/urwvn/u
+tmri8v.pfb>
+Output written on poster.pdf (4 pages, 342944 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 132 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 179 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 170 words of extra memory for PDF output out of 10000 (max. 10000000)
 

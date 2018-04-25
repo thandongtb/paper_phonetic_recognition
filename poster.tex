@@ -68,11 +68,15 @@
 \usepackage{hyperref}
 \usepackage{caption}
 \usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
 \usepackage{csquotes}
 \usepackage[nocaptions]{vntex}
 \usepackage{url}
 \usepackage[table,xcdraw]{xcolor}
 \newcommand\abs[1]{\left|#1\right|}
+\usepackage{graphicx}
+\newcommand{\cev}[1]{\reflectbox{\ensuremath{\vec{\reflectbox{\ensuremath{#1}}}}}}
 % Add the compsoc option for Computer Society conferences.
 %
 % If IEEEtran.cls has not been installed into the LaTeX system files,
@@ -454,8 +458,8 @@ Phonetic Recognition, MFCC features, sequence-length, bidirectional LSTM, TIMIT
 \section{Introduction}
 
 In a general machine learning application, speech recognition technology is one of the most typical application recently. In speech recognition technology, given a sequence of acoustic observations, this technology decodes the corresponding sequence of words or phonemes. From that, we can use it for helping language learner in pronunciation. The typical neural network model is used for speech recognition system is recurrent neural network (RNN), an effective model in sequence-to-sequence problem.\\
-In this paper, we introduce recurrent neural network model and some variants, along with some techniques to improve the accuracy for phonetic classification problem such as: sequence length, normalization, deep long-short-term memory (deep LSTM), bidirectional LSTM. With these techniques, the phonetic classification problem is greatly improved compared to the original model.\\
-We evaluate the effectiveness of models using TIMIT dataset. The original data were converted to Mel Frequency Cepstral Coefficient (MFCC) features. MFCCs features were said to have better results in speech recognition problem. In each generated output of sequence, we use the results of previous and next steps by using bidirectional LSTM. In others, when applying normalization for input data, the training process will be more faster, and it gets better results. We get achieved 13.5\% PER, the best result in TIMIT dataset until now. 
+In this paper, we introduce recurrent neural network model and some variants, along with some techniques to improve the accuracy for phonetic classification problem such as: sequence length, feature scaling, deep long-short-term memory (deep LSTM), bidirectional LSTM. With these techniques, the phonetic classification problem is greatly improved compared to the original model.\\
+We evaluate the effectiveness of models using TIMIT dataset. The original data were converted to Mel Frequency Cepstral Coefficient (MFCC) features. MFCCs features were said to have better results in speech recognition problem. In each generated output of sequence, we use the results of previous and next steps by using bidirectional LSTM. In others, when applying feature scaling for input data, the training process will be more faster, and it gets better results. We get achieved 13.5\% PER, the best result in TIMIT dataset until now. 
 
 % needed in second column of first page if using \IEEEpubid
 %\IEEEpubidadjcol
@@ -598,25 +602,69 @@ We tried some models of deep learning architecture mentioned above to training t
 
 \subsection{Recurrent Neural Network}
 Recurrent Neural Networks (RNNs) are popular models that have shown great promise in many Natural Language Processing, Artificial Speech Recognition, Time Series, Sequence-to-sequence tasks. The idea behind RNNs is to make use of sequential information. Here is what a typical RNN look like:
-<picture and explaination>
-\subsection{Long Short Term Memory Networks}
+\begin{figure}[h]
+\includegraphics[scale=0.5]{rnn.png}
+\centering
+\caption{\textit{Recurrent Neural Network}}
+\end{figure}
+\begin{align*}
+	&h_t = \sigma(Ux_t + Wh_{t-1} + b_1)\\
+	&o_t = softmax(Vh_t + b_2)
+\end{align*}
+
+
+\subsection{Long Short Term Memory}
 In theory RNNs can make use of information in arbitrarily long sequences, but in practice they are limited to looking back only a few steps. From that, LSTM cell have been designed to get around this problem. Long Short Term Memory Network (LSTMs) are a special kind of RNN, capable of learning long-term dependencies.
-<picture and explaination>
+
+\begin{figure}[h]
+\includegraphics[scale=0.5]{lstm.png}
+\centering
+\caption{\textit{Long Short Term Memory Cell}}
+\end{figure}
+
+\begin{align*}
+     &i_t = \sigma (W_{xi}x_t + W_{hi}h_{t-1} + W_{ci}c_{t-1} + b_i) \\
+     &f_t = \sigma (W_{xf}x_t + W_{hf}h_{t-1} + W_{cf}c_{t-1} + b_f) \\
+     &c_t = f_tc_{t-1} + i_t tanh(W_{xc}x_t + W_{hc}h_{t-1} + b_c) \\
+     &o_t = \sigma (W_{xo}x_t + W_{ho}h_{t-1} + W_{co}c_{t-1} + b_o) \\
+     &h_t = o_t tanh(c_t)
+\end{align*} 
+
+where $\sigma$ is the logistic sigmoid function, and $i$, $f$, $o$ and $c$ are respectively the \textit{input gate}, \textit{forget gate}, \textit{output gate} and \textit{cell memory} vectors.
 
 \subsection{Bidirectional Recurrent Neural Networks}
 Bidirectional Recurrent Neural Networks (BRNNs) are based on the idea that the output at time t may not only depend on the previous elements in the sequence, but also future elements. Bidirectional RNNs are quite simple. They are just two RNNs stacked on top of each other. The output is then computed based on the hidden state of both RNNs.
-<picture and explaination>
+
+
+
+\begin{figure}[h]
+\includegraphics[scale=0.4]{brnn.png}
+\centering
+\caption{\textit{Bidirectional Recurrent Neural Network}}
+\end{figure}
+
+As illustrated in Figure 5, a BRNN computes the forward hidden sequence $\vec{h}$, the backward hidden sequence $\cev{h}$ and the output sequence $y$ by iterating the backward layer from $t = T$ to $1$, the forward layer from $t = 1$ to $T$ and then updating the output layer
+
+\begin{align*}
+	&\vec{h_t} = \sigma (W_{x\vec{h}}x_t + W_{\vec{h}\vec{h}}\vec{h_{t-1}} + b_{\vec{h}})\\
+	&\cev{h_t} = \sigma (W_{x\cev{h}}x_t + W_{\cev{h}\cev{h}}\cev{h_{t-1}} + b_{\cev{h}})\\
+	&y_t = W_{\vec{h}y}\vec{h}_t + W_{\cev{h}y}\cev{h}_t + b_y
+\end{align*}
 
 \subsection{Deep Bidirectional Recurrent Neural Networks}
 Deep (Bidirectional) RNNs are similar to Bidirectional RNNs, only that we now have multiple layers per time step. In practice this gives us a higher learning capacity (but we also need a lot of training data).
-<picture and explaination>
+
 
 \subsection{Other techniques}
 \subsubsection{Sequence length}
 
 In this paper, we use the input sequence is a 2D array representing each utterance of the sentence. Where each row is a feature vector with 26 MFCC values. Number of columns is the number of feature vectors of the sentence which have the longest MFCC features, called "max length". If the sentence has the number of features less than "max length", vectors with a value of 0 will be added to fit with "max length". This will allow us to use Tensorflow in training. Also, with the use of sequence length, we will ignore the dependence between sentences when we connect the sentences together, obviously for greater efficiency because sentences completely independent.
 \subsubsection{Feature Scaling}
-Feature scaling is a method used to standardize the range of independent variables or features of data. In data processing, it is also known as data normalization and is generally performed during the data preprocessing step. By using normalization with input data before training, we get the better results and faster training.
+Feature scaling is a method used to standardize the range of independent variables or features of data. In data processing, it is also known as data normalization/standardization and is generally performed during the data preprocessing step. By using feature scaling with input data before training, we get the better results and faster training. The technique we used there is standardization, first it subtracts the mean value (so standardized values always have a zero mean), and then it divides by the variance so that the resulting distribution has unit variance. In others, standardization is much less affected by outliers.
+\begin{equation}
+	x' = \frac{x - \bar{x}}{\sigma}
+\end{equation}
+Where ${\displaystyle x}$ is the original feature vector, ${\displaystyle {\bar {x}}}$ is the mean of that feature vector, and ${\displaystyle \sigma }$ is its standard deviation.
 
 \section{Experiments}
 Phoneme recognition experiments were performed on the TIMIT corpus. TIMIT contains a total of 6300 sentences, 10 sentences spoken by each of 630 speakers from 8 major dialect regions of the United States.
